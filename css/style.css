@@ -31,7 +31,7 @@
 .navGeneral {
     grid-area: navGeneral;
     background-color: #2ea1b3;
-    height: 5vh;
+    height: fit-content;
     list-style-type: none;
     text-decoration: none;
     padding: 0.3rem;
@@ -55,8 +55,9 @@
 
 .footerGeneral {
     grid-area: footerGeneral;
-    background-color: #2ab198be;
+    background-color: #2ab198;
     height: 10vh;
+    height: fit-content;
     position: absolute;
     bottom: 0;
     width: 100%;
