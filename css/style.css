@@ -296,6 +296,7 @@ h1{
 
     .footerGeneral {
         height: 10vh;
+        height: fit-content;
     }
 
     footer a img{
