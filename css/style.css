@@ -46,7 +46,7 @@
     overflow: scroll;
 }
 
-.mainGeneralHome{
+.mainGeneralHome {
     display: grid;
     grid-template-areas: "pMain pMain pMain"
         "contenedorFotoMain contenedorFotoMain contenedorFotoMain"
@@ -180,7 +180,7 @@ footer p {
 
 /* H1 configuracion que figura en todas las paginas */
 
-h1{
+h1 {
     text-align: center;
     font-size: 2em;
     padding: 1em;
@@ -190,9 +190,9 @@ h1{
 
 .categoriasTravelTips {
     text-align: center;
-    }
+}
 
-.pTravelTips{
+.pTravelTips {
     font-size: 1.5em;
 }
 
@@ -218,22 +218,23 @@ h1{
 
 /* configuracion de la pagina Fotos */
 
-.mainPaginaFotos{
+.mainPaginaFotos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.fotosPaginaFotos{
+.fotosPaginaFotos {
     margin: 0.5em;
 }
 
 /* configuracion de la pagina Contacto */
 
-.formularioContacto{
-    margin: 4em;
+.formularioContacto {
+    margin-left: 2em;
+    margin-right: 2em;
     font-size: 1.3em;
-    line-height: 1.5    em;
+    line-height: 1.5;
 }
 
 /*estructura general del layour para pantallas medianas: Ipads / tables */
@@ -270,12 +271,13 @@ h1{
 @media screen and (min-width:1024px) {
     .bodyGeneral {
         display: grid;
-        grid-template-areas:    "headerGeneral navGeneral navGeneral navGeneral"
-                                "mainGeneral mainGeneral mainGeneral mainGeneral"
-                                "footerGeneral footerGeneral footerGeneral footerGeneral";
+        grid-template-areas: "headerGeneral navGeneral navGeneral navGeneral"
+            "mainGeneral mainGeneral mainGeneral mainGeneral"
+            "footerGeneral footerGeneral footerGeneral footerGeneral";
     }
 
     .headerGeneral {
+        height: fit-content;
         height: 10vh;
         justify-content: flex-start;
         padding: 0.2em;
@@ -299,23 +301,27 @@ h1{
         height: fit-content;
     }
 
-    footer a img{
+    footer a img {
         height: 2em;
-     
+
     }
 
-    footer p{
+    footer p {
         padding: 0;
 
     }
-    
+
     .imagenTravelTips {
         height: 5em;
-        margin-bottom: 1    em;
+        margin-bottom: 1 em;
     }
 
     .mainGuiasDeViaje {
-        flex-direction: row;}
-        
-}
+        flex-direction: row;
+    }
 
+    .formularioContacto {
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+}
